@@ -6,6 +6,14 @@ header#portfolio-header {
   text-align: center;
 }
 
+a {
+  color: blue;
+}
+
+a:hover{
+  color: purple;
+}
+
 h1 {
   color: hsla(0, 0%, 100%, 0.9);
   font-weight: bold;
