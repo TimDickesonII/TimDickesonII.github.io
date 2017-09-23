@@ -1,22 +1,28 @@
-header#portfolio-header {
+body {
+  display: flex;
+  flex-direction: column;
+  background: url(http://www.designbolts.com/wp-content/uploads/2012/11/3px-tile-tiny-dark-square-tiles-seamless-pattern.jpg);
+  width: 90%;
+  margin: auto;
+  color: white;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 0 auto;
+  padding-top: 3vh;
   color: black;
-  background: url(images/nathan-anderson-291067.jpg) center / cover;
-  height: 60vh;
+  height: 20vh;
   justify-content: center;
   text-align: center;
-}
-
-a {
-  color: blue;
-}
-
-a:hover{
-  color: purple;
 }
 
 h1 {
   color: hsla(0, 0%, 100%, 0.9);
   font-weight: bold;
+  padding: 0;
+  margin: 0;
 }
 
 #slogan {
@@ -25,38 +31,64 @@ h1 {
   font-size: 1.6rem;
 }
 
-body {
-  background-color: black;
-  color: white;
-}
-
 main {
-  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 5vh;
 }
 
-.featured-project-name h2 {
+.container {
+  display: flex;
+  flex-direction: row;
+  background-color: hsla(0, 0%, 100%, 0.7);
+  border: 0.5vh solid black;
+  margin: 2vh;
+}
+
+.project-picture {
+  margin: 1vh;
+}
+
+.project-name, .project-description, .project-link {
+  padding-left: 5vh;
   color: black;
 }
 
-.project-description {
-  padding-left: 0;
+.project-link:hover {
+  color: grey;
 }
 
-.project img {
-  width: 100%;
+img {
+  width: 50vh;
+  height: 26vh;
 }
+
+/* FOOTER */
 
 footer#connect {
-  bottom: 0;
-  padding: 0rem;
+  right: 0;
+  margin: 0 auto;
+  padding: 0;
   position: fixed;
-  width: 100%;
-  z-index: 1;
 }
 
 #footer-links {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#footer-links li {
   margin: auto;
   font-size: 1rem;
+}
+
+#footer-links img {
+  width: 32px;
+  height: 32px;
 }
 
 @media screen and (max-width: 1024px) {
