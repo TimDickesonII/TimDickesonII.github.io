@@ -1,7 +1,9 @@
 body {
   display: flex;
   flex-direction: column;
-  background: url(http://www.designbolts.com/wp-content/uploads/2012/11/3px-tile-tiny-dark-square-tiles-seamless-pattern.jpg);
+  /*background: url(http://www.designbolts.com/wp-content/uploads/2012/11/3px-tile-tiny-dark-square-tiles-seamless-pattern.jpg);
+  */
+  background: url(https://github.com/emilyxxie/green_rain/blob/master/green_rain.gif?raw=true);
   width: 90%;
   margin: auto;
   color: white;
