@@ -11,8 +11,8 @@ function hideImages() {
 function showImage() {
   if (imageIndex < 0) imageIndex = images.length-1;
   if (imageIndex > images.length-1) imageIndex = 0;
-  image = images[imageIndex];
-  $(image).fadeIn(1);
+  img = images[imageIndex];
+  $(img).fadeIn(1);
 }
 
 function lastImage() {
