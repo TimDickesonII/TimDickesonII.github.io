@@ -6,7 +6,6 @@ body {
   color: white;
   font-family: garamond;
   font-weight: 400;
-  overflow: hidden;
 }
 
 header {
@@ -27,6 +26,14 @@ h1 {
   margin: 0;
 }
 
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
 #slogan {
   color: hsla(0, 0%, 100%, 0.7);
   font-weight: lighter;
@@ -38,17 +45,29 @@ main {
   flex-direction: column;
   margin: 0 5vh;
 }
-.container{
-  width: 100%;
-  height: 35vh;
-  margin: 1vh auto;
-  min-width: 900px;
+
+.container {
+  display: flex;
+  flex-direction: row;
+  background-color: hsla(0, 0%, 100%, 0.7);
+  border: 0.5vh solid black;
+  border-radius: 1vh;
+  margin: 2vh;
 }
-iframe {
-  border: 1px solid black;
-  border-radius: 0.5em;
-  width: 100%;
-  height: 100%;
+
+.project-picture {
+  margin: 2vh;
+  border: 0.5vh solid black;
+  border-radius: 1vh;
+}
+
+.project-name, .project-description, .project-link {
+  padding-left: 5vh;
+  color: black;
+}
+
+.project-link:hover {
+  color: grey;
 }
 
 img {
@@ -84,4 +103,10 @@ footer#connect {
   width: 5rem;
   height: 5rem;
   border-radius: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  header#portfolio-header {
+    display: flex;
+  }
 }
