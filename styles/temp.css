@@ -1,3 +1,19 @@
+/* PAGE DEFAULTS */
+h1 {
+  color: hsla(0, 0%, 100%, 0.9);
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1em;
+}
+
+
+/* BODY */
 body {
   display: grid;
   width: 80%;
@@ -7,101 +23,89 @@ body {
   font-weight: 400;
 }
 
+
+/* HEADER */
 header {
-  margin: 0 auto 0 auto;
+  grid-row: 1/2;
+  margin: 0 auto;
   padding-top: 3vh;
   color: black;
   height: 20vh;
-  justify-content: center;
   text-align: center;
 }
-
-h1 {
-  color: hsla(0, 0%, 100%, 0.9);
-  font-weight: bold;
-  padding: 0;
-  margin: 0;
-}
-
-h2 {
-  font-size: 2em;
-}
-
-p {
-  font-size: 1.5em;
-}
-
 #slogan {
   color: hsla(0, 0%, 100%, 0.7);
   font-weight: lighter;
   font-size: 2em;
 }
 
+
+/* MAIN */
 main {
-  display: flex;
-  flex-direction: column;
+  grid-row-start: 2;
   margin: 0 5vh;
 }
-
+.project-link {
+  text-decoration: none;
+  color: grey;
+}
 .container {
-  display: flex;
-  flex-direction: row;
+  display: grid;
   background-color: hsla(0, 0%, 100%, 0.7);
   border: 0.5vh solid black;
   border-radius: 1vh;
   margin: 2vh;
 }.container:hover{
-  background-color: hsla(0, 0%, 100%, 1);
-}.project-link {
-  text-decoration: none;
-  color: grey;
-}.project-picture {
+  background-color: white;
+}
+.project-picture {
+  grid-row-start: 1;
+  grid-column: 1/2;
   margin: 2vh;
   border: 0.5vh solid black;
   border-radius: 1vh;
-}.project-name, .project-description {
-  padding-left: 5vh;
-  color: black;
-}
-
-img {
   width: 50vh;
   height: 26vh;
 }
 
-/* FOOTER */
+.project-info{
+  border: 1px solid yellow;
+  grid-row-start: 1;
+  grid-column: 2/4;
+  color: black;
+}
 
+
+
+/* FOOTER */
 footer#connect {
   right: 0;
   margin: 0 auto;
   padding: 0;
   position: fixed;
 }
-
 #footer-links {
   list-style-type: none;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  border-radius: 5em;
-}
-
-#footer-links li {
-  margin: auto;
-  font-size: 1em;
-}
-
-#footer-links img {
-  display: grid;
+}#footer-links img {
   width: 5em;
   height: 5em;
   border-radius: 1em;
 }
 
-@media screen and (min-width: 1024px) {
 
+/* Media Queries */
+/* What needs to be included for responsive web design here:
+
+  .project-picture
+  footer
+  #footer-links img
+  page defaults
+
+*/
+@media screen and (min-width: 1024px) {
+  /*img*/
 }
 
 @media screen and (min-width: ) {
-
+  /*img*/
 }
