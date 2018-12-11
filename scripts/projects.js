@@ -55,7 +55,7 @@ var projects = [
     "https://imacubsfan23.github.io",
     "Portfolio-ception",
     "this.png"
-  ),
+  )
 ];
 
 document.open();
