@@ -4,21 +4,22 @@ h1 {
   font-weight: bold;
 }
 
-h2 {
-  font-size: 2em;
-}
-
 p {
   font-size: 1em;
+  color: hsla(0, 0%, 100%, 0.7);
+  font-weight: lighter;
+  font-size: 2em;
 }
 
 
 /* BODY */
 body {
   display: grid;
-  width: 80%;
-  margin: auto;
-  color: white;
+  grid-template-columns: 1fr 8fr 1fr;
+  align-items: center;
+
+  background-color: black;
+  font-size: 1em;
   font-family: garamond;
   font-weight: 400;
 }
@@ -27,23 +28,41 @@ body {
 /* HEADER */
 header {
   grid-row: 1/2;
-  margin: 0 auto;
-  padding-top: 3vh;
-  color: black;
-  height: 20vh;
+  grid-column-start: 2;
   text-align: center;
 }
-#slogan {
-  color: hsla(0, 0%, 100%, 0.7);
-  font-weight: lighter;
-  font-size: 2em;
+
+
+/* FOOTER */
+footer{
+  grid-column-start: 2;
+  grid-row-start: 2;
+  justify-content: center;
+  align-items: center;
+}
+#footer-links {
+  list-style-type: none;
+  display: grid;
+}#footer-links img {
+  border-radius: 8em;
+  border: 2px solid white;
+  width: 8em;
+  height: 8em;
+}.quora{
+  grid-column-start: 1;
+}.github{
+  grid-column-start: 2;
+}.linkedin{
+  grid-column-start: 3;
+}.email{
+  grid-column-start: 4;
 }
 
 
 /* MAIN */
 main {
-  grid-row-start: 2;
-  margin: 0 5vh;
+  grid-row-start: 3;
+  grid-column-start: 2;
 }
 .project-link {
   text-decoration: none;
@@ -51,45 +70,33 @@ main {
 }
 .container {
   display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3em;
+
+  padding: 2em;
+  margin: 2em 0;
   background-color: hsla(0, 0%, 100%, 0.7);
   border: 0.5vh solid black;
-  border-radius: 1vh;
-  margin: 2vh;
+  border-radius: 1em;
 }.container:hover{
   background-color: white;
 }
 .project-picture {
   grid-row-start: 1;
   grid-column: 1/2;
-  margin: 2vh;
-  border: 0.5vh solid black;
-  border-radius: 1vh;
-  width: 50vh;
-  height: 26vh;
-}
+  align-self: center;
 
+  border: 0.1em solid black;
+  border-radius: 1em;
+  width: 100%;
+}
 .project-info{
-  border: 1px solid yellow;
   grid-row-start: 1;
-  grid-column: 2/4;
+  grid-column: 2/3;
   color: black;
 }
-
-
-
-/* FOOTER */
-footer#connect {
-  right: 0;
-  margin: 0 auto;
-  padding: 0;
-  position: fixed;
-}
-#footer-links {
-  list-style-type: none;
-}#footer-links img {
-  width: 5em;
-  height: 5em;
-  border-radius: 1em;
+.project-description{
+  color: black;
 }
 
 
