@@ -17,7 +17,7 @@ var projects = [
   new Project(
     "Pigeon Puncher",
     "https://github.com/imacubsfan23/pigeonpuncher",
-    "An interface to search shows and movies through themoviedb API",
+    "Unlimited Scroller Game made with Python and the Pygame library",
     "pigeonpuncher.png"
   ),
   new Project(
