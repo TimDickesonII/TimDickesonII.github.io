@@ -35,7 +35,7 @@ var projects = [
   new Project(
     "plots2",
     "https://publiclab.org/wiki/plots2",
-    "My first open source project contributing to.",
+    "Open Source Project Using Ruby on Rails",
     "plots2.png"
   ),
   new Project(
