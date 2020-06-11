@@ -39,12 +39,6 @@ var projects = [
     "plots2.png"
   ),
   new Project(
-    "STEMConstants",
-    "https://github.com/imacubsfan23/STEMConstants",
-    "My first open source project created as a ruby gem.",
-    "stemconstants.png"
-  ),
-  new Project(
     "Bloccit",
     "https://pacific-shore-67613.herokuapp.com/",
     "A clone of Reddit made during my time at Bloc to practice Rails",
