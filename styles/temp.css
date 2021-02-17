@@ -1,104 +1,71 @@
-/* PAGE DEFAULTS */
-h1 {
-  color: hsla(0, 0%, 100%, 0.9);
-  font-weight: bold;
-}
-
-p {
-  font-size: 1em;
-  color: hsla(0, 0%, 100%, 0.7);
-  font-weight: lighter;
-  font-size: 2em;
-}
-
-
 /* BODY */
 body {
-  display: grid;
-  grid-template-columns: 1fr 8fr 1fr;
   align-items: center;
-
-  background-color: black;
-  font-size: 1em;
-  font-family: garamond;
-  font-weight: 400;
+  background-color: maroon;
+  color: white;
 }
-
+a{
+  color: white;
+}
 
 /* HEADER */
 header {
-  grid-row: 1/2;
-  grid-column-start: 2;
+  grid-template-columns: 1fr 1fr;
   text-align: center;
+}header div{
+  border: 1px solid yellow;
+}.me {
+  grid-column: 2;
+  max-height: 40vh;
+  overflow: hidden;
+  border: .5em solid white;
+  border-radius: .5em;
 }
 
-
-/* FOOTER */
-footer{
-  grid-column-start: 2;
-  grid-row-start: 2;
-  justify-content: center;
-  align-items: center;
-}
-#footer-links {
+/* NAV */
+nav {
+  margin: 2vh 0;
+}nav a{
   list-style-type: none;
-  display: grid;
-}#footer-links img {
+  text-decoration: none;
+}nav a img{
+  border: .2em solid rgba(255,255,255,0);
   border-radius: 8em;
-  border: 2px solid white;
-  width: 8em;
-  height: 8em;
-}.quora{
-  grid-column-start: 1;
-}.github{
-  grid-column-start: 2;
-}.linkedin{
-  grid-column-start: 3;
-}.email{
-  grid-column-start: 4;
+}nav a img:hover{
+  border: .2em solid white;
 }
-
 
 /* MAIN */
-main {
-  grid-row-start: 3;
-  grid-column-start: 2;
+main{
+  margin: 1vh 0;
 }
 .project-link {
   text-decoration: none;
-  color: grey;
 }
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 3em;
-
-  padding: 2em;
-  margin: 2em 0;
-  background-color: hsla(0, 0%, 100%, 0.7);
-  border: 0.5vh solid black;
-  border-radius: 1em;
+  padding: 1vh;
+  border: 1px solid rgba(0,0,0,0);
 }.container:hover{
+  border-radius: 1em;
+  color: black;
   background-color: white;
 }
 .project-picture {
-  grid-row-start: 1;
-  grid-column: 1/2;
+  grid-column: 1;
   align-self: center;
-
-  border: 0.1em solid black;
-  border-radius: 1em;
   width: 100%;
+  border-radius: .5em;
+  border: .1em solid white;
 }
 .project-info{
-  grid-row-start: 1;
-  grid-column: 2/3;
-  color: black;
+  grid-column: 2;
+  text-align: center;
 }
 .project-description{
-  color: black;
+  padding: 2vw;
 }
-
 
 /* Media Queries */
 /* What needs to be included for responsive web design here:

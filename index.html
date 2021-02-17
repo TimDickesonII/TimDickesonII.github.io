@@ -1,47 +1,87 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Portfolio | Tim Dickeson II</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles/temp.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/p5.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/addons/p5.dom.js"></script>
-    <script src="scripts/matrix.js"></script>
-  </head>
 
-  <body>
-    <header>
-      <h1>Tim Dickeson II</h1>
-      <p>Software Engineer</p>
-    </header>
+<head>
+  <title>Portfolio | Tim Dickeson II</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles/temp.css">
+</head>
 
-    <footer>
-      <ul id="footer-links">
-        <li class="quora">
-          <a href="https://www.quora.com/profile/Tim-Dickeson-1">
-            <img src="images/quora_logo.png" alt="My quora page">
-          </a>
-        </li>
-        <li class="github">
-          <a href="https://github.com/imacubsfan23">
-            <img src="images/github_logo.jpg" alt="My github">
-          </a>
-        </li>
-        <li class="linkedin">
-          <a href="https://www.linkedin.com/in/tim-dickeson/">
-            <img src="images/linkedin_logo.png" alt="My LinkedIn Account">
-          </a>
-        </li>
-        <li class="email">
-          <a href="mailto:imacubsfan23@gmail.com">
-            <img src="images/email_logo.png" alt="Email me">
-          </a>
-        </li>
-      </ul>
-    </footer>
+<body>
+  <header>
+    <h1>Tim Dickeson II</h1>
+    <h2>Software Engineer</h2>
+    <img src="images/me.jpg" alt="Me" class="me">
+    <nav>
+      <a href="https://github.com/imacubsfan23">
+        <img src="images/github_logo.png" alt="My github">
+      </a>
+      <a href="https://www.linkedin.com/in/tim-dickeson/">
+        <img src="images/linkedin_logo.png" alt="My LinkedIn Account">
+      </a>
+      <a href="mailto:imacubsfan23@gmail.com">
+        <img src="images/email_logo.png" alt="Email me">
+      </a>
+    </nav>
+  </header>
 
-    <main>
-      <script src="scripts/projects.js"></script>
-    </main>
-  </body>
+  <main>
+    <a class="project-link" href="https://moviesearchservice.herokuapp.com">
+      <div class="container">
+        <img class="project-picture" src="images/moviesearchservice.png" alt="MovieSearchService" />
+        <div class="project-info">
+          <h2 class="project-name">MovieSearchService</h2>
+          <p class="project-description">An interface to search shows and movies through themoviedb API</p>
+        </div>
+      </div>
+    </a>
+    <a class='project-link' href="https:////publiclab.org/wiki/plots2">
+      <div class="container">
+        <img class="project-picture" src="images/plots2.png" alt="plots2" />
+        <div class="project-info">
+          <h2 class="project-name">publiclab/plots2</h2>
+          <p class="project-description">Open Source Project Using Ruby on Rails</p>
+        </div>
+      </div>
+    </a>
+    <a class='project-link' href="https://pacific-shore-67613.herokuapp.com/">
+      <div class="container">
+        <img class="project-picture" src="images/bloccit.png" alt="Bloccit" />
+        <div class="project-info">
+          <h2 class="project-name">Bloccit</h2>
+          <p class="project-description">A clone of Reddit made during my time at Bloc to practice Rails</p>
+        </div>
+      </div>
+    </a>
+    <a class='project-link' href="https://timdickesonii.netlify.com/">
+      <div class="container">
+        <img class="project-picture" src="images/blocjams.png" alt="Bloc Jams Music Player" />
+        <div class="project-info">
+          <h2 class="project-name">Bloc Jams Music Player</h2>
+          <p class="project-description">A music player made during my time at Bloc to learn jQuery</p>
+        </div>
+      </div>
+    </a>
+    <a class='project-link' href="https://github.com/imacubsfan23/pigeonpuncher">
+      <div class="container">
+        <img class="project-picture" src="images/pigeonpuncher.png" alt="Pigeon Puncher" />
+        <div class="project-info">
+          <h2 class="project-name">Pigeon Puncher</h2>
+          <p class="project-description">Unlimited Scroller Game made with Python and the Pygame library</p>
+        </div>
+      </div>
+    </a>
+    <a class='project-link' href="https://www.youtube.com/watch?v=RoESkSNBo8A">
+      <div class="container">
+        <img class="project-picture" src="images/clappybird.png" alt="Clappy Bird" />
+        <div class="project-info">
+          <h2 class="project-name">Clappy Bird</h2>
+          <p class="project-description">Took a previously made flappybird clone on Unity3D and revamped it to be
+            controlled by clapping</p>
+        </div>
+      </div>
+    </a>
+  </main>
+</body>
+
 </html>
