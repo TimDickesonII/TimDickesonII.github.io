@@ -1,7 +1,7 @@
 /* BODY */
 body {
   align-items: center;
-  background-color: maroon;
+  background-color: navy;
   color: white;
 }
 a{
@@ -10,27 +10,24 @@ a{
 
 /* HEADER */
 header {
-  grid-template-columns: 1fr 1fr;
+  border: 1px solid white;
+  border-radius: 1em;
   text-align: center;
-}header div{
-  border: 1px solid yellow;
 }.me {
-  grid-column: 2;
-  max-height: 40vh;
+  max-width: 100%;
   overflow: hidden;
-  border: .5em solid white;
-  border-radius: .5em;
+  border-bottom: 1px solid white;
 }
 
 /* NAV */
-nav {
-  margin: 2vh 0;
-}nav a{
+nav a{
   list-style-type: none;
   text-decoration: none;
 }nav a img{
+  margin: 2vh;
   border: .2em solid rgba(255,255,255,0);
   border-radius: 8em;
+  max-height: 10vh;
 }nav a img:hover{
   border: .2em solid white;
 }
